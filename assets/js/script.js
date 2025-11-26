@@ -95,7 +95,7 @@ function enviarFormulario() {
     }
   }, 100);
 
-  const URL_API = "https://script.google.com/macros/s/AKfycbyuwrSwUIDYdPf9MGbfgrVV-n7z7oOWzxqm4-FDfgjbv1I9d9vFAudK-omY87SOrM3oDg/exec";
+  const URL_API = "https://script.google.com/macros/s/AKfycbya8f0yzTrwoqoD205QRi5mmiUxscjEY6OItUV6ONTOsKoYigtO7RoTM0F6dng7YYoE4Q/exec";
 
   fetch(`${URL_API}?ra=${ra}`)
     .then(res => res.json())
@@ -190,7 +190,7 @@ function consultarAgendamento() {
   }
 
   document.getElementById("loadingOverlay").style.display = "flex";
-  const URL_API = "https://script.google.com/macros/s/AKfycbyuwrSwUIDYdPf9MGbfgrVV-n7z7oOWzxqm4-FDfgjbv1I9d9vFAudK-omY87SOrM3oDg/exec";
+  const URL_API = "https://script.google.com/macros/s/AKfycbya8f0yzTrwoqoD205QRi5mmiUxscjEY6OItUV6ONTOsKoYigtO7RoTM0F6dng7YYoE4Q/exec";
 
   fetch(`${URL_API}?ra=${ra}`)
     .then(res => res.json())
@@ -248,7 +248,7 @@ let horariosLotados = {};
 
 async function carregarHorariosLotados() {
   try {
-    const response = await fetch("https://script.google.com/macros/s/AKfycbyuwrSwUIDYdPf9MGbfgrVV-n7z7oOWzxqm4-FDfgjbv1I9d9vFAudK-omY87SOrM3oDg/exec");
+    const response = await fetch("https://script.google.com/macros/s/AKfycbya8f0yzTrwoqoD205QRi5mmiUxscjEY6OItUV6ONTOsKoYigtO7RoTM0F6dng7YYoE4Q/exec");
     const data = await response.json();
     horariosLotados = data;
   } catch (error) {
@@ -266,7 +266,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function iniciarCronometro() {
 
     // AJUSTE A DATA AQUI ↓↓↓
-    const fim = new Date("2025-11-26T09:50:00").getTime();
+    const fim = new Date("2025-11-26T10:00:00").getTime();
 
     const enviarBtn = document.querySelector(".btn-send");
 
@@ -305,6 +305,7 @@ function iniciarCronometro() {
 }
 
 document.addEventListener("DOMContentLoaded", iniciarCronometro);
+
 
 
 
