@@ -371,5 +371,86 @@ button[onclick="fecharConsulta()"] {
   border-color: #d60000;
 }
 
+/* POPUP INICIAL REGULAR x SUBSTITUTIVA */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;              /* já aparece assim que a página carrega */
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.popup-modal {
+  background: #ffffff;
+  padding: 20px 24px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.popup-modal h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #003366;
+  font-size: 1.2rem;
+}
+
+.popup-modal p {
+  margin-bottom: 20px;
+  font-size: 0.96rem;
+}
+
+.popup-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.popup-buttons .btn {
+  width: 100%;
+}
+
+.btn-regular {
+  background-color: #003366;
+  color: #fff;
+}
+
+.btn-substitutiva {
+  background-color: #f0ad4e;
+  color: #fff;
+}
+
+
+#timerContainer {
+    text-align: center;
+    margin: 20px 0;
+    padding: 15px;
+    border: 2px solid #003366;
+    border-radius: 12px;
+    background: #f1f1f1;
+}
+
+.timer-display {
+    font-size: 22px;
+    font-weight: bold;
+    color: #003366;
+    margin-top: 10px;
+}
+
+.timer-display span {
+    font-size: 26px;
+    color: #cc0000;
+}
+
+.status-msg {
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: red;
+}
 
 
