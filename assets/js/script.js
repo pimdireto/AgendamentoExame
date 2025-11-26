@@ -22,12 +22,12 @@ function adicionarDisciplina() {
 
 function gerarOpcoesHorarios() {
   const horarios = [
-    "24/11 Segunda-feira - Tarde", "24/11 Segunda-feira - Noite",
-    "25/11 Terça-feira - Manhã", "25/11 Terça-feira - Tarde", "25/11 Terça-feira - Noite",
-    "26/11 Quarta-feira - Manhã", "26/11 Quarta-feira - Tarde", "26/11 Quarta-feira - Noite",
-    "27/11 Quinta-feira - Manhã", "27/11 Quinta-feira - Tarde", "27/11 Quinta-feira - Noite",
-    "28/11 Sexta-feira - Manhã", "28/11 Sexta-feira - Tarde", "28/11 Sexta-feira - noite",
-    "29/11 Sábado - Manhã", "29/11 Sábado  - Tarde"
+    "08/12 Segunda-feira - Tarde", "08/12 Segunda-feira - Noite",
+    "09/12 Terça-feira - Manhã", "09/12 Terça-feira - Tarde", "09/12 Terça-feira - Noite",
+    "10/12 Quarta-feira - Manhã", "10/12 Quarta-feira - Tarde", "10/12 Quarta-feira - Noite",
+    "11/12 Quinta-feira - Manhã", "11/12 Quinta-feira - Tarde", "11/12 Quinta-feira - Noite",
+    "12/12 Sexta-feira - Manhã", "12/12 Sexta-feira - Tarde", "12/12 Sexta-feira - noite",
+    "13/12 Sábado - Manhã", "13/12 Sábado  - Tarde"
   ];
   return horarios
     .map(h => `<div class="schedule-option" onclick="selecionarHorario(this)">${h}</div>`)
@@ -260,20 +260,6 @@ document.addEventListener("DOMContentLoaded", () => {
   carregarHorariosLotados();
 });
 
-// ===================== FUNÇÕES DO POPUP – SITE REGULAR =====================
-
-function confirmarRegular() {
-  const popup = document.getElementById("popup-inicial");
-  if (popup) {
-    popup.style.display = "none";
-  }
-}
-
-function irParaSubstitutiva() {
-  window.location.href = "https://pimdireto.github.io/AgendamentoSubstitutivaUNIPBC/";
-}
-
-
 // ==========================================
 // CRONÔMETRO + BLOQUEIO FRONTEND
 // ==========================================
@@ -319,3 +305,4 @@ function iniciarCronometro() {
 }
 
 document.addEventListener("DOMContentLoaded", iniciarCronometro);
+
