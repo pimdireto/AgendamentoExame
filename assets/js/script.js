@@ -266,7 +266,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function iniciarCronometro() {
 
     // AJUSTE A DATA AQUI ↓↓↓
-    const fim = new Date("2025-11-26T10:00:00").getTime();
+    const fim = new Date("2025-12-06T22:00:00").getTime();
 
     const enviarBtn = document.querySelector(".btn-send");
 
@@ -305,6 +305,7 @@ function iniciarCronometro() {
 }
 
 document.addEventListener("DOMContentLoaded", iniciarCronometro);
+
 
 
 
