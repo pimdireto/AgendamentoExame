@@ -22,7 +22,6 @@ function adicionarDisciplina() {
 
 function gerarOpcoesHorarios() {
   const horarios = [
-    "08/12 Segunda-feira - Tarde", "08/12 Segunda-feira - Noite",
     "09/12 Terça-feira - Manhã", "09/12 Terça-feira - Tarde", "09/12 Terça-feira - Noite",
     "10/12 Quarta-feira - Manhã", "10/12 Quarta-feira - Tarde", "10/12 Quarta-feira - Noite",
     "11/12 Quinta-feira - Manhã", "11/12 Quinta-feira - Tarde", "11/12 Quinta-feira - Noite",
@@ -305,6 +304,7 @@ function iniciarCronometro() {
 }
 
 document.addEventListener("DOMContentLoaded", iniciarCronometro);
+
 
 
 
